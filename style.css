@@ -66,7 +66,7 @@ nav a{
     background: var(--Primary-Accent);
 } */
 nav a:hover{
-    color:var(--Text);
+    color:var(--Primary-Accent);
     text-decoration: underline;
     text-underline-offset: 0.5rem;
 }
@@ -95,9 +95,10 @@ nav a:hover{
     justify-content: center;
     width: 95%;
     transform: translate(-50%);
+    padding: 10px;
     /* height: fit-content; */
     height: 90vh;
-    height: 90dvh;
+    height: 90vh;
     /* margin-top: 10vh; */
 }
 #hi{
@@ -124,7 +125,7 @@ nav a:hover{
 #pic{
     width: 30%;
     border-radius: 50%;
-    border: 2px solid var(--Primary-Accent);
+    border: 3px solid var(--Primary-Accent);
     margin-right: 10%;
     position: relative;
     margin-left: auto;
