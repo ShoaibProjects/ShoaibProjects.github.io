@@ -95,14 +95,14 @@ nav a:hover{
     justify-content: center;
     width: 95%;
     transform: translate(-50%);
-    padding: 10px;
+    padding: 20px;
     /* height: fit-content; */
-    height: 90vh;
-    height: 90vh;
+    height: 100vh;
+    height: 100vh;
     /* margin-top: 10vh; */
 }
-#hi{
-    font-size: 2rem;
+.preheadings{
+    font-size: 1.5rem;
 }
 #name{
     font-size: 3.5rem;
@@ -119,13 +119,13 @@ nav a:hover{
 .description h2 span{
     color: var(--Primary-Accent);
 }
-.description p{
+.description p,.About p{
     font-size: 1.5rem;
 }
 #pic{
     width: 30%;
     border-radius: 50%;
-    border: 3px solid var(--Primary-Accent);
+    border: 5px solid var(--Primary-Accent);
     margin-right: 10%;
     position: relative;
     margin-left: auto;
@@ -198,16 +198,19 @@ nav a:hover{
 }
 
 .projects{
-    height: auto;
+    height: 100vh;
     border: 2px solid;
 }
-.projects h1{
-    margin-top: 5vh;
+.ph,.ah{
+    text-align: center;
+    margin-top: 15vh;
+}
+.projects h1,.About h1{
     text-align: center;
     font-size: 2.5em;
 }
 .pcontainer{
-    height: 85vh;
+    height: 80vh;
     padding: 10px;
     /* background-color: blueviolet; */
     display: flex;
@@ -216,7 +219,7 @@ nav a:hover{
 .todomockup,.bgmockup{
     position: relative;
     width: 35%;
-    top: 5%;
+    top: 2%;
     height: 85%;
     border:5px solid  var(--Secondary-Accent);
     text-align: center;
@@ -258,8 +261,33 @@ nav a:hover{
 }
 
 .About{
-    height: 90vh;
+    height: 100vh;
     border: 2px solid;
+}
+.about-container{
+    display: flex;
+    align-items: center;
+    padding: 2% 5%;
+}
+.about-text{
+    padding: 10px;
+}
+.About img{
+    width: 30%;
+    border: 5px solid var(--Primary-Accent);
+    border-radius: 10px;
+}
+.card-container{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.card{
+    border: 2px solid var(--Text);
+    border-radius: 10px;
+    padding: 5px;
+    text-align: center;
+    background-color: var(--Secondary-Accent);
 }
 
 .skills{
