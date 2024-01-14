@@ -199,13 +199,13 @@ nav a:hover{
 
 .projects{
     height: 100vh;
-    border: 2px solid;
+    border: 2px solid var(--Background);
 }
-.ph,.ah{
+.ph,.ah,.sh,.ach,.ch{
     text-align: center;
     margin-top: 15vh;
 }
-.projects h1,.About h1{
+.projects h1,.About h1, .skills h1,.Achievements h1,.contact h1{
     text-align: center;
     font-size: 2.5em;
 }
@@ -259,10 +259,16 @@ nav a:hover{
     background-color: var(--Background);
     color: var(--Secondary-Accent);
 }
+.mockcontainer a{
+    text-decoration: none;
+}
+.mockcontainer a:visited{
+    text-decoration: none;
+}
 
 .About{
     height: 100vh;
-    border: 2px solid;
+    border: 2px solid var(--Background);
 }
 .about-container{
     display: flex;
@@ -300,36 +306,37 @@ nav a:hover{
 }
 
 .skills{
-    background-color: aquamarine;
-    height: 90vh;
-    border: 2px solid;
+    height: 100vh;
+    border: 2px solid var(--Background);
 }
-.skills div{
-    display: flex;
+.skills-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
     justify-content: space-evenly;
-    background-color: blanchedalmond;
-    margin-top: 10vh;
+    /* background-color: blanchedalmond; */
+    margin-top: 5px;
+    padding: 10px;
+}
+.skills-container figure{
+    margin: 20px;
 }
 .skills div img{
-    width: 5vw;
-}
-.skills h1{
-    margin-top: 10vh;
-    margin-left: 5vw;
+    width: 6vw;
 }
 .skills span{
     margin-left: 5vw;
 }
 .skills figcaption{
     text-align: center;
+    font-size: 1.5rem;
 }
 
 .Achievements{
-    height: 90vh;
-    border: 2px solid;
+    height: 100vh;
+    border: 2px solid var(--Background);
 }
 
 .contact{
-    height: 90vh;
-    border: 2px solid;
+    height: 100vh;
+    border: 1px solid var(--Background);
 }
