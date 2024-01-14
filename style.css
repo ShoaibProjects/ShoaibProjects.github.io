@@ -24,6 +24,7 @@ body{
     background: var(--Background);
     font-family: Arial, Helvetica, sans-serif;
     color: var(--Text);
+    transition: 0.5s;
 }
 header{
     background-color: var(--Background);
@@ -326,7 +327,7 @@ nav a:hover{
 .skills span{
     margin-left: 5vw;
 }
-.skills figcaption{
+.skills figure{
     text-align: center;
     font-size: 1.5rem;
 }
@@ -339,6 +340,10 @@ nav a:hover{
 .contact{
     height: 100vh;
     border: 1px solid var(--Background);
+}
+
+.desc,.projects,.About,.skills,.Achievements,.contact{
+    transition:border-color 0.5s;
 }
 
 .dark-mode{
@@ -357,6 +362,10 @@ nav a:hover{
         border-color: var(--Secondary-Accent);
     }
     .card{
+        color: var(--Background);
+    }
+    .cbtn:hover{
+        box-shadow: none;
         color: var(--Background);
     }
 }
