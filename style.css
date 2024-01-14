@@ -340,3 +340,23 @@ nav a:hover{
     height: 100vh;
     border: 1px solid var(--Background);
 }
+
+.dark-mode{
+    --Background: #121212;
+    --Primary-Accent: #3498db;
+    --Secondary-Accent: #2ecc71;
+    --Text: #ecf0f1;
+    --Link-Color: #e74c3c;
+    .dbtn{
+        box-shadow: none;
+    }
+    #pic{
+        border-color: var(--Secondary-Accent);
+    }
+    .About img{
+        border-color: var(--Secondary-Accent);
+    }
+    .card{
+        color: var(--Background);
+    }
+}
