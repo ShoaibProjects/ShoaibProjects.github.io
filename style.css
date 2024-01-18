@@ -123,7 +123,7 @@ nav a:hover{
 .description p,.About p{
     font-size: 1.5rem;
 }
-#pic,#pic2{
+.pic,.pic2{
     width: 30%;
     border-radius: 50%;
     border: 5px solid var(--Primary-Accent);
@@ -132,7 +132,7 @@ nav a:hover{
     margin-left: auto;
     bottom: 10%;
 }
-#pic2{
+.pic2{
     display: none;
 }
 .dbtn, .cbtn{
@@ -388,10 +388,10 @@ nav a:hover{
         width: auto;
         position: static;
     }
-    #pic{
+    .pic{
         display: none;
     }
-    #pic2{
+    .pic2{
         display: block;
         width: 60%;
         margin: 20px auto;
