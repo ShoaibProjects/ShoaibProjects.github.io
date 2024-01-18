@@ -123,7 +123,7 @@ nav a:hover{
 .description p,.About p{
     font-size: 1.5rem;
 }
-#pic{
+#pic,#pic2{
     width: 30%;
     border-radius: 50%;
     border: 5px solid var(--Primary-Accent);
@@ -131,6 +131,9 @@ nav a:hover{
     position: relative;
     margin-left: auto;
     bottom: 10%;
+}
+#pic2{
+    display: none;
 }
 .dbtn, .cbtn{
     text-decoration: none;
@@ -367,5 +370,45 @@ nav a:hover{
     .cbtn:hover{
         box-shadow: none;
         color: var(--Background);
+    }
+}
+
+@media (max-width: 600px) {
+    /* Styles for screens wider than 600px */
+    header{
+        display: none;
+    }
+    .desc{
+        height: auto;
+        display: block;
+        /* background-color: antiquewhite; */
+    }
+    .description{
+        height: auto;
+        width: auto;
+        position: static;
+    }
+    #pic{
+        display: none;
+    }
+    #pic2{
+        display: block;
+        width: 60%;
+        margin: 20px auto;
+    }
+    .socialicons{
+        position: static;
+        /* background-color: aqua; */
+    }
+    .pcontainer{
+        display: block;
+    }
+    .todomockup img,.bgmockup img{
+        width: 70%;
+        height: auto;
+    }
+    .todomockup,.bgmockup{
+        height: auto;
+        width: 70%;
     }
 }
