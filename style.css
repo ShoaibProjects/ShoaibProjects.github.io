@@ -344,11 +344,83 @@ nav a:hover{
     height: 100vh;
     border: 2px solid var(--Background);
 }
+.ach-container{
+    text-align: start;
+    padding: 20px;
+}
+.ach-container a{
+    text-decoration: none;
+    color: var(--Text);
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin: 10px;
+}
+.problem-solving i,.sololearn-java i,.sololearn-web i,.sololearn-html i{
+    font-size: 2.5rem;
+    margin: 10px;
+    color: rgb(86, 97, 118);
+}
+#check{
+    color: green;
+}
 
 .contact{
     height: 100vh;
     border: 1px solid var(--Background);
 }
+.contact-container{
+    width: 40%;
+    height: 50%;
+    text-align: center;
+    background-color: rgb(230, 230, 230);
+    border-radius: 10px;
+    position: relative;
+    left: 30%;
+    top: 10%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-weight: bold;
+}
+.contact-container p{
+    display: inline;
+}
+.mob,.email{
+    height: 47%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    background-color: var(--Secondary-Accent);
+    border-radius: 10px;
+}
+.mob:hover,.email:hover{
+    background-color: var(--Primary-Accent);
+    color: var(--Background);
+}
+
+.mob i,.email i{
+    font-size: 2rem;
+}
+.mob i,.mob np,.email i,.email p{
+    margin: 10px;
+} 
+
+footer{
+    height: 4rem;
+    width: 100%;
+    background-color: var(--Secondary-Accent);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 500;
+}
+footer span{
+    font-weight: 500;
+}
+
 
 .desc,.projects,.About,.skills,.Achievements,.contact{
     transition:border-color 0.5s;
@@ -463,5 +535,23 @@ nav a:hover{
     }
     .skills figure{
         font-size: 1.25rem;
+    }
+    .Achievements{
+        height: auto;
+    }
+    .ach-container{
+        font-size: 1rem;
+    }
+    .contact-container{
+        width: auto;
+        position: static;
+        margin: 10px;
+        height: 300px;
+    }
+    .mob{
+        font-size: 1.25rem;
+    }
+    .email{
+        font-size: 1rem;
     }
 }
