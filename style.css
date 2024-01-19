@@ -136,6 +136,7 @@ nav a:hover{
     display: none;
 }
 .dbtn, .cbtn{
+    margin-top: 5px;
     text-decoration: none;
     display: inline-block;
     padding: 10px;
@@ -177,6 +178,7 @@ nav a:hover{
     width: 10%;
 } */
 .socialicons{
+    margin-top: 5px;
     position: absolute;
     font-size: 2em;
     left: 4em;
@@ -284,10 +286,13 @@ nav a:hover{
     padding: 10px;
     width: 65%;
 }
-.About img{
+.about-pic{
     width: 30%;
     border: 5px solid var(--Primary-Accent);
     border-radius: 10px;
+}
+.about-pic2{
+    display: none;
 }
 .card-container{
     margin-top: 20px;
@@ -380,13 +385,15 @@ nav a:hover{
     }
     .desc{
         height: auto;
-        display: block;
+        flex-direction: column;
         /* background-color: antiquewhite; */
+        justify-content: center;
     }
     .description{
         height: auto;
         width: auto;
         position: static;
+        /* background-color:brown; */
     }
     .pic{
         display: none;
@@ -396,19 +403,65 @@ nav a:hover{
         width: 60%;
         margin: 20px auto;
     }
+    .btn{
+        text-align: center;
+    }
     .socialicons{
         position: static;
+        font-size: 1.5rem;
         /* background-color: aqua; */
     }
-    .pcontainer{
-        display: block;
-    }
-    .todomockup img,.bgmockup img{
-        width: 70%;
+    .projects{
         height: auto;
+    }
+    .pcontainer{
+        flex-direction: column;
+        justify-content: center;
+        background-color: aquamarine;
+        height: auto;
+        gap: 1rem;
+    }
+    .todomockup img{
+        height: 15rem;
+    }
+    .bgmockup img{
+        height: 15rem;
     }
     .todomockup,.bgmockup{
+        height:fit-content;
+        width: auto;
+        margin: 0;
+        padding-bottom: 25px;
+    }
+    .About{
         height: auto;
+    }
+    .about-container{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .about-pic{
+        display: none;
+    }
+    .about-pic2{
+        display: block;
         width: 70%;
+        border: 5px solid var(--Primary-Accent);
+        border-radius: 10px;
+    }
+    .about-text{
+        width: 100%;
+    }
+    .card-container{
+        flex-direction: column;
+    }
+    .skills{
+        height: auto;
+    }
+    .skills div img{
+        width: 15vw;
+    }
+    .skills figure{
+        font-size: 1.25rem;
     }
 }
