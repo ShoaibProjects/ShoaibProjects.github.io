@@ -88,6 +88,12 @@ nav a:hover{
     font-size: 3rem;
     margin-right: 0.5rem;
 }
+#hmoon{
+    font-size: 1.75rem;
+}
+#hsun{
+    font-size: 2rem;
+}
 .ham-nav{
     display: none;
 }
