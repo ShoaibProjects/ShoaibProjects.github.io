@@ -12,17 +12,37 @@
 
 <body>
     <header>
-        <a href="#" class="logo"><span>Sho</span>aib</a>
-        <nav>
-            <a href="#home-link" class="active">Home</a>
-            <a href="#projects-link">Projects</a>
-            <a href="#about-link">About</a>
-            <a href="#skills-link">Skills</a>
-            <a href="#achievements-link">Achievements</a>
-            <a href="#contact-link">Contact</a>
-        </nav>
-        <div class="sun" id="light-mode" onclick="light()"><i class='bx bxs-sun' id="isun"></i></div>
-        <div class="moon" id="dark-mode" onclick="dark()"><i class='bx bx-moon' id="imoon"></i></div>
+        <div class="nav">
+            <a href="#" class="logo"><span>Sho</span>aib</a>
+            <nav>
+                <a href="#home-link" class="active">Home</a>
+                <a href="#projects-link">Projects</a>
+                <a href="#about-link">About</a>
+                <a href="#skills-link">Skills</a>
+                <a href="#achievements-link">Achievements</a>
+                <a href="#contact-link">Contact</a>
+            </nav>
+            <div class="sun" id="light-mode" onclick="light()"><i class='bx bxs-sun' id="isun"></i></div>
+            <div class="moon" id="dark-mode" onclick="dark()"><i class='bx bx-moon' id="imoon"></i></div>
+        </div>
+        <div class="ham-nav">
+            <a href="#" class="logo"><span>Sho</span>aib</a>
+            <div class="ham">
+                <div class="ham-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="menu-links">
+                    <a href="#home-link" onclick="toggleMenu()">Home</a>
+                    <a href="#projects-link" onclick="toggleMenu()">Projects</a>
+                    <a href="#projects-link" onclick="toggleMenu()">Projects</a>
+                    <a href="#about-link" onclick="toggleMenu()">About</a>
+                    <a href="#skills-link" onclick="toggleMenu()">Skills</a>
+                    <a href="#achievements-link" onclick="toggleMenu()">Achievements</a>
+                    <a href="#contact-link" onclick="toggleMenu()">Contact</a>
+                </div>
+            </div>
     </header>
     <main>
         <section class="home">
@@ -31,7 +51,8 @@
                 <img class="pic2" src="images/profilepic.jpg" alt="">
                 <div class="description">
                     <p class="preheadings">Hi, i am</p>
-                    <p id="name"><strong>Shoaib Akhtar</strong><p>
+                    <p id="name"><strong>Shoaib Akhtar</strong>
+                    <p>
                     <h2>And I'm a <span>Frontend Developer</span></h2>
                     <p>A passionate <em>software developer</em> encompasing fiels of full stack web development,
                         android development and much more.</p>
@@ -48,8 +69,11 @@
                 <div class="socialicons">
                     <a href="https://github.com/ShoaibProjects"><i class='bx bxl-github'></i></a>
                     <a href="https://www.linkedin.com/in/shoaib-akhtar-117329252/"><i class='bx bxl-linkedin'></i></a>
-                    <a href="https://twitter.com/ShoaibSDE?fbclid=IwAR1a9k9jSeUWQOIZYi-GLNFzZHlQICuD9LU37YcZpl-Y73ifWpxVpeXVYo8"><i class='bx bxl-twitter'></i></a>
-                    <a href="https://www.facebook.com/profile.php?id=100086582017751"><i class='bx bxl-facebook'></i></a>
+                    <a
+                        href="https://twitter.com/ShoaibSDE?fbclid=IwAR1a9k9jSeUWQOIZYi-GLNFzZHlQICuD9LU37YcZpl-Y73ifWpxVpeXVYo8"><i
+                            class='bx bxl-twitter'></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=100086582017751"><i
+                            class='bx bxl-facebook'></i></a>
                 </div>
                 <div class="proffcont"></div>
             </div>
@@ -199,8 +223,10 @@
         </section>
     </main>
     <footer>
-       <span>&copy;</span> <p>&nbsp; Shoaib Akhtar</p>
+        <span>&copy;</span>
+        <p>&nbsp; Shoaib Akhtar</p>
     </footer>
     <script src="script.js"></script>
 </body>
+
 </html>
