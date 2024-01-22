@@ -116,11 +116,41 @@ nav a:hover{
     position: absolute;
     top: 100%;
     right: 0;
-    background-color: var(--Background);
+    background-color: var(--Secondary-Accent);
     width: fit-content;
-    max-width: 0;
+    max-height: 0;
     overflow: hidden;
     transition: all 0.3 ease-in-out;
+}
+.menu-links a{
+    display: block;
+    padding: 10px;
+    text-align: center;
+    color: var(--Text);
+    text-decoration: none;
+    transition: all 0.3 ease-in-out;
+    color: var(--Background);
+}
+.menu-links.open{
+    max-height: 300px;
+}
+.ham-icon.open span:first-child{
+    transform: rotate(45deg) translate(10px, 5px);
+}
+.ham-icon.open span:nth-child(2){
+    opacity: 0;
+}
+.ham-icon.open span:last-child{
+    transform: rotate(-45deg) translate(10px, -5px);
+}
+.ham-icon span:first-child{
+    transform: none;
+}
+.ham-icon span:first-child{
+    opacity: 1;
+}
+.ham-icon span:first-child{
+    transform: none;
 }
 /* main{
     
