@@ -130,9 +130,10 @@ nav a:hover{
     text-decoration: none;
     transition: all 0.3 ease-in-out;
     color: var(--Background);
+    font-size: 1.25rem;
 }
 .menu-links.open{
-    max-height: 300px;
+    max-height: fit-content;
 }
 .ham-icon.open span:first-child{
     transform: rotate(45deg) translate(10px, 5px);
@@ -151,6 +152,11 @@ nav a:hover{
 }
 .ham-icon span:first-child{
     transform: none;
+}
+.mode{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
 /* main{
     
